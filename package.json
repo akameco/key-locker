@@ -13,7 +13,7 @@
     "add:cov": "cat ./coverage/lcov.info | coveralls",
     "precommit": "lint-staged",
     "prepublish": "yarn build",
-    "prebuild": "rm -r lib",
+    "prebuild": "rimraf lib",
     "build": "babel src -d lib --ignore *.test.js",
     "postbuild": "yarn flow:cp",
     "fmt": "prettier --write '{src/*.js,*.json}'",
@@ -48,6 +48,7 @@
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "rimraf": "^2.6.2"
   }
 }
