@@ -1,0 +1,53 @@
+{
+  "name": "key-locker",
+  "version": "0.0.0",
+  "description": "Locker",
+  "license": "MIT",
+  "repository": "akameco/key-locker",
+  "author": "akameco <akameco.t@gmail.com> (akameco.github.io)",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "add-contributor": "all-contributors add",
+    "add:cov": "cat ./coverage/lcov.info | coveralls",
+    "precommit": "lint-staged",
+    "prepublish": "yarn build",
+    "prebuild": "rm -r lib",
+    "build": "babel src -d lib --ignore *.test.js",
+    "postbuild": "yarn flow:cp",
+    "fmt": "prettier --write '{src/*.js,*.json}'",
+    "flow": "flow",
+    "flow:cp": "cp src/index.js lib/index.js.flow",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage --ci --runInBand",
+    "test:ci": "npm run validate && npm run add:cov",
+    "validate": "npm run lint && npm run flow && npm run test:cov"
+  },
+  "lint-staged": {
+    "*.js": ["fmt", "validate", "git add"],
+    "*.json": ["fmt", "git add"]
+  },
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "keywords": ["lock"],
+  "dependencies": {},
+  "devDependencies": {
+    "all-contributors-cli": "^4.5.3",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-precure": "^0.11.1",
+    "flow-bin": "^0.58.0",
+    "flow-copy-source": "^1.2.1",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
+  }
+}
