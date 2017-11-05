@@ -26,7 +26,7 @@ class KeyLocker {
 
     const timer = setTimeout(() => {
       this.delete(key)
-    })
+    }, this.waitTime)
 
     this._map.set(key, timer)
   }
