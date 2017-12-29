@@ -16,7 +16,7 @@
     "prebuild": "rimraf lib",
     "build": "babel src -d lib --ignore *.test.js",
     "postbuild": "yarn flow:cp",
-    "fmt": "prettier --write '{src/*.js,*.json}'",
+    "fmt": "prettier --write '{src/*.js,*.json,*.md}'",
     "flow": "flow",
     "flow:cp": "cp src/index.js lib/index.js.flow",
     "lint": "eslint src",
@@ -28,14 +28,14 @@
   },
   "lint-staged": {
     "*.js": ["fmt", "validate", "git add"],
-    "*.json": ["fmt", "git add"]
+    "*.{json,md}": ["fmt", "git add"]
   },
   "main": "lib/index.js",
   "files": ["lib"],
   "keywords": ["lock"],
   "dependencies": {},
   "devDependencies": {
-    "all-contributors-cli": "^4.5.3",
+    "all-contributors-cli": "^4.10.1",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -48,8 +48,8 @@
     "flow-copy-source": "^1.2.1",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
-    "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2",
     "rimraf": "^2.6.2"
   }
 }

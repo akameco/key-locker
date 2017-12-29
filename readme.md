@@ -1,4 +1,5 @@
 # key-locker
+
 [![Build Status](https://travis-ci.org/akameco/key-locker.svg?branch=master)](https://travis-ci.org/akameco/key-locker)
 [![Coverage Status](https://coveralls.io/repos/github/akameco/key-locker/badge.svg?branch=master)](https://coveralls.io/github/akameco/key-locker?branch=master)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
@@ -7,13 +8,11 @@
 
 > Locker
 
-
 ## Install
 
 ```
 $ npm install key-locker
 ```
-
 
 ## Usage
 
@@ -29,7 +28,6 @@ locker.has('test'))
 locker.has('test'))
 // => false
 ```
-
 
 ## API
 
@@ -47,8 +45,11 @@ refresh time.
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars2.githubusercontent.com/u/4002137?v=4" width="100px;"/><br /><sub>akameco</sub>](http://akameco.github.io)<br />[💻](https://github.com/akameco/typed-assign/commits?author=akameco "Code") [📖](https://github.com/akameco/typed-assign/commits?author=akameco "Documentation") [⚠️](https://github.com/akameco/typed-assign/commits?author=akameco "Tests") [🚇](#infra-akameco "Infrastructure (Hosting, Build-Tools, etc)") |
+
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/4002137?v=4" width="100px;"/><br /><sub><b>akameco</b></sub>](http://akameco.github.io)<br />[💻](https://github.com/akameco/key-locker/commits?author=akameco "Code") [📖](https://github.com/akameco/key-locker/commits?author=akameco "Documentation") [⚠️](https://github.com/akameco/key-locker/commits?author=akameco "Tests") [🚇](#infra-akameco "Infrastructure (Hosting, Build-Tools, etc)") |
 | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
