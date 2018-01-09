@@ -20,9 +20,7 @@ class KeyLocker {
   }
 
   add(key: string) {
-    if (this.has(key)) {
-      clearTimeout(this._map.get(key))
-    }
+    this.delete(key)
 
     const timer = setTimeout(() => {
       this.delete(key)

@@ -1,12 +1,15 @@
 // @flow
 const KeyLocker = require('.')
 
-jest.useFakeTimers()
-
 let locker
 
 beforeEach(() => {
+  jest.useFakeTimers()
   locker = new KeyLocker()
+})
+
+afterEach(() => {
+  jest.clearAllTimers()
 })
 
 test('call clear after 1 second', () => {
