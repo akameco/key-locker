@@ -6,7 +6,7 @@ type Opts = {
 }
 
 class KeyLocker {
-  _map: Map<string, number>
+  _map: Map<string, *>
   waitTime: number
 
   constructor(opts: ?Opts) {
@@ -33,7 +33,7 @@ class KeyLocker {
 
   delete(key: string) {
     if (this.has(key)) {
-      clearInterval(this._map.get(key))
+      clearTimeout(this._map.get(key))
       this._map.delete(key)
     }
   }
