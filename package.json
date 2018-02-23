@@ -43,12 +43,12 @@
     "babel-preset-flow": "^6.23.0",
     "coveralls": "^3.0.0",
     "eslint": "^4.15.0",
-    "eslint-config-precure": "^0.13.0",
-    "flow-bin": "^0.63.1",
+    "eslint-config-precure": "^2.4.0",
+    "flow-bin": "^0.66.0",
     "flow-copy-source": "^1.2.1",
     "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "lint-staged": "^6.0.0",
+    "jest": "^22.4.2",
+    "lint-staged": "^7.0.0",
     "prettier": "^1.9.2",
     "rimraf": "^2.6.2"
   }

@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/akameco/key-locker/badge.svg?branch=master)](https://coveralls.io/github/akameco/key-locker?branch=master)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/key-locker.svg)](https://greenkeeper.io/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > Locker
