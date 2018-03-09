@@ -27,29 +27,40 @@
     "validate": "npm run lint && npm run flow && npm run test:cov"
   },
   "lint-staged": {
-    "*.js": ["fmt", "validate", "git add"],
-    "*.{json,md}": ["fmt", "git add"]
+    "*.js": [
+      "fmt",
+      "validate",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "fmt",
+      "git add"
+    ]
   },
   "main": "lib/index.js",
-  "files": ["lib"],
-  "keywords": ["lock"],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "lock"
+  ],
   "dependencies": {},
   "devDependencies": {
-    "all-contributors-cli": "^4.10.1",
+    "all-contributors-cli": "^4.11.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "coveralls": "^3.0.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.18.2",
     "eslint-config-precure": "^2.4.0",
-    "flow-bin": "^0.66.0",
-    "flow-copy-source": "^1.2.1",
+    "flow-bin": "^0.67.1",
+    "flow-copy-source": "^1.3.0",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
-    "prettier": "^1.9.2",
+    "prettier": "^1.11.1",
     "rimraf": "^2.6.2"
   }
 }
